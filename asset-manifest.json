@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/Varun-Portfolio/static/css/main.3d61893d.css",
+    "main.js": "/Varun-Portfolio/static/js/main.8fc7069d.js",
+    "static/media/varun-rename.svg": "/Varun-Portfolio/static/media/varun-rename.fc6eba44ea15efe334376dc1c78bc13e.svg",
+    "index.html": "/Varun-Portfolio/index.html",
+    "main.3d61893d.css.map": "/Varun-Portfolio/static/css/main.3d61893d.css.map",
+    "main.8fc7069d.js.map": "/Varun-Portfolio/static/js/main.8fc7069d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3d61893d.css",
+    "static/js/main.8fc7069d.js"
+  ]
+}
