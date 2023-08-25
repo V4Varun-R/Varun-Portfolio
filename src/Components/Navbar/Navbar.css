@@ -1,0 +1,89 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.navbar-section {
+  background-color: black;
+}
+
+.navbar .logo-img {
+  width: 140px;
+}
+@media screen and (max-width: 767px) {
+  .navbar .logo-img {
+    width: 120px;
+  }
+}
+.navbar .navbar-items {
+  margin: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+  color: white;
+}
+.navbar .navbar-items li {
+  list-style: none;
+}
+.navbar .navbar-items li a {
+  text-decoration: none;
+  color: white;
+}
+.navbar .navbar-items li .active {
+  color: #ff004f;
+}
+@media screen and (min-width: 767px) {
+  .navbar .navbar-items li {
+    position: relative;
+    cursor: pointer;
+  }
+  .navbar .navbar-items li::after {
+    content: "";
+    height: 3px;
+    width: 0;
+    background-color: #ff004f;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    transition: 0.5s;
+  }
+  .navbar .navbar-items li:hover::after {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .navbar .navbar-items {
+    position: fixed;
+    top: 0px;
+    right: -200px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #ff004f;
+    width: 200px;
+    padding-left: 0px;
+    transition: right 0.8s;
+  }
+  .navbar .navbar-items .bi-x-lg {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .navbar .navbar-items.show {
+    right: 0px;
+  }
+}
+.navbar .bi {
+  color: white;
+  font-size: 25px;
+}
+@media screen and (min-width: 767px) {
+  .navbar .bi {
+    display: none;
+  }
+}/*# sourceMappingURL=Navbar.css.map */
