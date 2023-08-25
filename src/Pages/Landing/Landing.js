@@ -7,7 +7,7 @@ export default function Landing() {
   return (
     <div id="landing-page">  
         <Banner/>
-        {/* <About/> */}
+        <About/>
     </div>
   )
 }

@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
 import './Navbar.css';
 import logo from "../../images/varun-rename.svg";
-import {BrowserRouter as Router,Routes,Route,Link,NavLink} from "react-router-dom";
-import Contact from '../../Pages/Contact/Contact';
-import Projects from '../../Pages/Project/Projects';
+import {NavLink} from "react-router-dom";
 export default function Navbar() {
   const [viewmenu , setviewmenu]= useState(false);
   const openmenu = () => {
@@ -19,8 +17,8 @@ export default function Navbar() {
         <nav className="container navbar"> 
             <img src={logo} alt="Varun-logo" className='logo-img'></img>
             <ul className={viewmenu ? "navbar-items show" : "navbar-items"}>
-                <li><NavLink to="/">Home</NavLink></li>
-                <li>About</li>
+                <li><NavLink to="/Varun-Portfolio" end>Home</NavLink></li>
+                <li><a href="#about-section">About</a></li>
                 <li>Services</li>
                 <li><NavLink to="/projects">Project</NavLink></li>
                 <li><NavLink to="/contact">Contact</NavLink></li>

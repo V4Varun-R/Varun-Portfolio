@@ -10,7 +10,7 @@ function App() {
       <Navbar/>
       <main>
         <Routes>
-            <Route path='' element={<Landing />}></Route>
+            <Route path='/Varun-Portfolio' element={<Landing />}></Route>
             <Route path='/contact' element={<Contact/>}></Route>
             <Route path='/projects' element={<Projects/>}></Route>
         </Routes>
