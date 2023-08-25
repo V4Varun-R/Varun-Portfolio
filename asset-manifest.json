@@ -1,14 +1,15 @@
 {
   "files": {
-    "main.css": "/Varun-Portfolio/static/css/main.3d61893d.css",
-    "main.js": "/Varun-Portfolio/static/js/main.8fc7069d.js",
+    "main.css": "/Varun-Portfolio/static/css/main.3be2780c.css",
+    "main.js": "/Varun-Portfolio/static/js/main.2583afae.js",
+    "static/media/about-pic.jpg": "/Varun-Portfolio/static/media/about-pic.20472f0fd973ed5fd10a.jpg",
     "static/media/varun-rename.svg": "/Varun-Portfolio/static/media/varun-rename.fc6eba44ea15efe334376dc1c78bc13e.svg",
     "index.html": "/Varun-Portfolio/index.html",
-    "main.3d61893d.css.map": "/Varun-Portfolio/static/css/main.3d61893d.css.map",
-    "main.8fc7069d.js.map": "/Varun-Portfolio/static/js/main.8fc7069d.js.map"
+    "main.3be2780c.css.map": "/Varun-Portfolio/static/css/main.3be2780c.css.map",
+    "main.2583afae.js.map": "/Varun-Portfolio/static/js/main.2583afae.js.map"
   },
   "entrypoints": [
-    "static/css/main.3d61893d.css",
-    "static/js/main.8fc7069d.js"
+    "static/css/main.3be2780c.css",
+    "static/js/main.2583afae.js"
   ]
 }
