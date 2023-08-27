@@ -72,6 +72,7 @@
     .navbar-items.show{
         @media screen and (max-width:767px){
             right:0px;    
+            z-index: 10;
         }
         
     }
