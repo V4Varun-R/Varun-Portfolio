@@ -16,6 +16,5 @@ export default function Banner() {
           <img src={cbanner} alt="banner"/>
       </div> 
     </div>
-    
   )
 }
