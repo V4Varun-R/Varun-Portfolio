@@ -18,7 +18,7 @@ export default function Navbar() {
             <img src={logo} alt="Varun-logo" className='logo-img'></img>
             <ul className={viewmenu ? "navbar-items show" : "navbar-items"}>
                 <li><NavLink to="/Varun-Portfolio" end>Home</NavLink></li>
-                <li><a href="#about-section">About</a></li>
+                <li><a href="/Varun-Portfolio#about-section">About</a></li>
                 <li>Services</li>
                 <li><NavLink to="/projects">Project</NavLink></li>
                 <li><NavLink to="/contact">Contact</NavLink></li>

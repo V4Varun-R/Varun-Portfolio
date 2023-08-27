@@ -16,18 +16,24 @@
 #about-section .about-inner .about-img {
   flex-basis: 40%;
 }
+@media screen and (max-width: 500px) {
+  #about-section .about-inner .about-img {
+    display: flex;
+    justify-content: center;
+  }
+}
 #about-section .about-inner .about-img img {
   width: 400px;
   border-radius: 10px;
 }
-@media screen and (max-width: 500px) {
-  #about-section .about-inner .about-img img {
-    width: 200px;
-  }
-}
 @media screen and (max-width: 991px) {
   #about-section .about-inner .about-img img {
     width: 300px;
+  }
+}
+@media screen and (max-width: 500px) {
+  #about-section .about-inner .about-img img {
+    width: 80%;
   }
 }
 #about-section .about-inner .about-content {

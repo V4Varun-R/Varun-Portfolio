@@ -12,14 +12,18 @@
         }
         .about-img{
             flex-basis: 40%;
+            @media screen and (max-width:500px){
+                display: flex;
+                justify-content: center;
+            }
             img{
                 width:400px;
                 border-radius: 10px;
-                @media screen and (max-width:500px){
-                    width:200px;
-                }
                 @media screen and (max-width:991px){
                     width:300px;
+                }
+                @media screen and (max-width:500px){
+                    width:80%;
                 }
             }
         }
