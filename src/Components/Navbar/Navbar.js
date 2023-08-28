@@ -17,12 +17,12 @@ export default function Navbar() {
         <nav className="container navbar"> 
             <img src={logo} alt="Varun-logo" className='logo-img'></img>
             <ul className={viewmenu ? "navbar-items show" : "navbar-items"}>
+                <i className="bi bi-x-lg" onClick={closemenu}></i>
                 <li><NavLink to="/Varun-Portfolio" end>Home</NavLink></li>
-                <li><a href="/Varun-Portfolio#about-section">About</a></li>
                 <li>Services</li>
                 <li><NavLink to="/projects">Project</NavLink></li>
-                <li><NavLink to="/contact">Contact</NavLink></li>
-                <i className="bi bi-x-lg" onClick={closemenu}></i>
+                <li><NavLink to="/contact" >Contact</NavLink></li>
+                
             </ul>
             <i className="bi bi-list" onClick={openmenu}></i>
         </nav>

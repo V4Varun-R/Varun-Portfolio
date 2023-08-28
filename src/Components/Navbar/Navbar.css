@@ -30,9 +30,6 @@
   text-decoration: none;
   color: white;
 }
-.navbar .navbar-items li .active {
-  color: #ff004f;
-}
 @media screen and (min-width: 767px) {
   .navbar .navbar-items li {
     position: relative;
@@ -51,6 +48,9 @@
   .navbar .navbar-items li:hover::after {
     width: 100%;
   }
+  .navbar .navbar-items .active {
+    color: #ff004f;
+  }
 }
 @media screen and (max-width: 767px) {
   .navbar .navbar-items {
@@ -60,17 +60,21 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: start;
     align-items: center;
     background-color: #ff004f;
     width: 200px;
+    z-index: 10;
     padding-left: 0px;
     transition: right 0.8s;
   }
   .navbar .navbar-items .bi-x-lg {
-    position: absolute;
-    top: 10px;
-    left: 20px;
+    width: 100%;
+    margin-left: 45px;
+    margin-top: 15px;
+  }
+  .navbar .navbar-items li {
+    margin: 40px 0px;
   }
 }
 @media screen and (max-width: 767px) {

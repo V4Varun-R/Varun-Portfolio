@@ -12,7 +12,8 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        justify-content: space-evenly;
+        min-height:590px;
     }
 }
 
@@ -47,6 +48,16 @@
     p{
         font-size: 19px;
         opacity: 0.6;
+    }
+    .btn-container{
+        display: flex;
+        @media screen and (max-width:767px){
+            align-items: center;
+            justify-content: center;
+        }
+        button{
+            margin-right: 20px;
+        }
     }
 }
 .banner-img{

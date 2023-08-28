@@ -15,7 +15,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
+    min-height: 590px;
   }
 }
 
@@ -59,6 +60,18 @@
 .banner-content p {
   font-size: 19px;
   opacity: 0.6;
+}
+.banner-content .btn-container {
+  display: flex;
+}
+@media screen and (max-width: 767px) {
+  .banner-content .btn-container {
+    align-items: center;
+    justify-content: center;
+  }
+}
+.banner-content .btn-container button {
+  margin-right: 20px;
 }
 
 .banner-img {

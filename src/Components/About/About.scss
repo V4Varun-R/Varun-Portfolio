@@ -1,7 +1,10 @@
-
+*{
+    margin: 0px;
+    padding: 0px;
+}
 #about-section{
     background-color: black;
-    padding-top: 20px;
+    margin-top: 50px;
     .about-inner{
         display:flex;
         flex-wrap: wrap;
@@ -17,7 +20,7 @@
                 justify-content: center;
             }
             img{
-                width:400px;
+                width:100%;
                 border-radius: 10px;
                 @media screen and (max-width:991px){
                     width:300px;
@@ -41,6 +44,9 @@
                         padding:10px 15px;
                         border-radius: 5px;
                         cursor: pointer;
+                        @media screen and (max-width:330px) {
+                            padding:10px 10px;
+                        }
                     }
                     li.active{
                         background-color: #ff004f;
@@ -53,6 +59,22 @@
                 }
                 .hide-tab{
                     display: none;
+                }
+                ul{
+                    padding-left: 0px;
+                    li{
+                        list-style-type: none;
+                        margin-bottom: 10px;
+                        span{
+                            color:#ff004f;
+                        }
+                    }
+                }
+                .work-exp{                  
+                       padding-left: 2rem;
+                    li{
+                        list-style-type: disc;
+                    }
                 }
             }
         }

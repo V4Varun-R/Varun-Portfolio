@@ -1,6 +1,11 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
 #about-section {
   background-color: black;
-  padding-top: 20px;
+  margin-top: 50px;
 }
 #about-section .about-inner {
   display: flex;
@@ -23,7 +28,7 @@
   }
 }
 #about-section .about-inner .about-img img {
-  width: 400px;
+  width: 100%;
   border-radius: 10px;
 }
 @media screen and (max-width: 991px) {
@@ -54,6 +59,11 @@
   border-radius: 5px;
   cursor: pointer;
 }
+@media screen and (max-width: 330px) {
+  #about-section .about-inner .about-content .tab-menu ul li {
+    padding: 10px 10px;
+  }
+}
 #about-section .about-inner .about-content .tab-menu ul li.active {
   background-color: #ff004f;
 }
@@ -62,4 +72,20 @@
 }
 #about-section .about-inner .about-content .tab-content .hide-tab {
   display: none;
+}
+#about-section .about-inner .about-content .tab-content ul {
+  padding-left: 0px;
+}
+#about-section .about-inner .about-content .tab-content ul li {
+  list-style-type: none;
+  margin-bottom: 10px;
+}
+#about-section .about-inner .about-content .tab-content ul li span {
+  color: #ff004f;
+}
+#about-section .about-inner .about-content .tab-content .work-exp {
+  padding-left: 2rem;
+}
+#about-section .about-inner .about-content .tab-content .work-exp li {
+  list-style-type: disc;
 }/*# sourceMappingURL=About.css.map */
