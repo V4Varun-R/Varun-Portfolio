@@ -40,14 +40,40 @@
   font-weight: 500;
   margin-bottom: 20px;
 }
+@media screen and (min-width: 767px) {
+  .banner-content h3 {
+    animation: lefttoright 1s ease forwards;
+  }
+}
 @media screen and (max-width: 500px) {
   .banner-content h3 {
     font-size: 25px;
   }
 }
+.banner-content h3 .front-end {
+  color: #ff004f;
+  text-shadow: 0 0 42px #ff004f, 0 0 82px #ff004f, 0 0 92px #ff004f, 0 0 102px #ff004f, 0 0 151px #ff004f;
+  font-weight: 550;
+  animation: neontext 1.5s ease-in-out infinite alternate;
+}
+@keyframes neontext {
+  from {
+    opactiy: 1;
+    text-shadow: 0 0 42px #ff004f, 0 0 82px #ff004f, 0 0 92px #ff004f, 0 0 102px #ff004f, 0 0 151px #ff004f;
+  }
+  to {
+    opacity: 0.6;
+    text-shadow: none;
+  }
+}
 .banner-content h1 {
   font-size: 60px;
   font-weight: 600;
+}
+@media screen and (min-width: 767px) {
+  .banner-content h1 {
+    animation: lefttoright 1s ease forwards;
+  }
 }
 @media screen and (max-width: 500px) {
   .banner-content h1 {
@@ -57,9 +83,24 @@
 .banner-content h1 span {
   color: #ff004f;
 }
-.banner-content p {
+@keyframes lefttoright {
+  0% {
+    opacity: 0;
+    transform: translateX(-300px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.banner-content .banner-info {
   font-size: 19px;
   opacity: 0.6;
+}
+@media screen and (min-width: 767px) {
+  .banner-content .banner-info {
+    animation: lefttoright 1s ease forwards;
+  }
 }
 .banner-content .btn-container {
   display: flex;
@@ -73,11 +114,46 @@
 .banner-content .btn-container button {
   margin-right: 20px;
 }
+@media screen and (min-width: 767px) {
+  .banner-content .btn-container .about-me-btn {
+    animation: btn-left 1s ease forwards;
+  }
+}
+@media screen and (min-width: 767px) {
+  .banner-content .btn-container .download-cv-btn {
+    animation: btn-right 1s ease forwards;
+  }
+}
+@keyframes btn-left {
+  0% {
+    opacity: 0;
+    transform: translateX(-300px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes btn-right {
+  0% {
+    opacity: 0;
+    transform: translateX(300px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 
 .banner-img {
   display: flex;
   justify-content: center;
   width: 50%;
+}
+@media screen and (min-width: 767px) {
+  .banner-img {
+    animation: righttoleft 1s ease forwards;
+  }
 }
 .banner-img img {
   width: 60%;
@@ -90,5 +166,15 @@
 @media screen and (max-width: 500px) {
   .banner-img img {
     width: 100%;
+  }
+}
+@keyframes righttoleft {
+  0% {
+    opacity: 0;
+    transform: translateX(300px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
   }
 }/*# sourceMappingURL=Banner.css.map */

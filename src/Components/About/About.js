@@ -22,9 +22,9 @@ export default function About() {
                 </p>
                   <div className="tab-menu">
                     <ul>
-                      <li className={tab===1 ? "active" : ""} onClick={()=>{changetab(1)}}>Education</li>
-                      <li className={tab===2 ? "active" : ""} onClick={()=>{changetab(2)}}>Skills</li>
-                      <li className={tab===3 ? "active" : ""} onClick={()=>{changetab(3)}}>Work Experience</li>
+                      <li className={tab===1 ? "active tab-line" : ""} onClick={()=>{changetab(1)}}>Education</li>
+                      <li className={tab===2 ? "active tab-line" : ""} onClick={()=>{changetab(2)}}>Skills</li>
+                      <li className={tab===3 ? "active tab-line" : ""} onClick={()=>{changetab(3)}}>Work Experience</li>
                     </ul>
                   </div>
                   <div className="tab-content">

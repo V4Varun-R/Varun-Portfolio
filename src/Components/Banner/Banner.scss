@@ -31,13 +31,44 @@
         font-size: 40px;
         font-weight: 500; 
         margin-bottom: 20px;
+        @media screen and (min-width:767px){
+            animation:lefttoright 1s ease forwards;
+        }
         @media screen and (max-width:500px) {
             font-size: 25px;
         }  
+        .front-end{
+            color: #ff004f;
+            text-shadow:
+            0 0 42px #ff004f,
+            0 0 82px #ff004f,
+            0 0 92px #ff004f,
+            0 0 102px #ff004f,
+            0 0 151px #ff004f;
+            font-weight: 550;
+            animation: neontext 1.5s ease-in-out infinite alternate;
+        }
+        @keyframes neontext {
+            from {
+                opactiy:1.0;
+                text-shadow:0 0 42px #ff004f,
+                0 0 82px #ff004f,
+                0 0 92px #ff004f,
+                0 0 102px #ff004f,
+                0 0 151px #ff004f;
+            }
+            to{
+                opacity:0.6;
+                text-shadow: none;
+            }
+        }
     }
     h1{
         font-size: 60px;
         font-weight: 600;
+        @media screen and (min-width:767px){
+            animation:lefttoright 1s ease forwards;
+        }
         @media screen and (max-width:500px) {
             font-size: 30px;
         }  
@@ -45,9 +76,23 @@
             color: #ff004f;
         }
     }
-    p{
+    @keyframes lefttoright {
+        0%{
+            opacity: 0;
+            transform: translateX(-300px);
+        }
+        100%{
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+    .banner-info{
         font-size: 19px;
         opacity: 0.6;
+        @media screen and (min-width:767px){
+            animation: lefttoright 1s ease forwards;
+
+        }
     }
     .btn-container{
         display: flex;
@@ -58,12 +103,45 @@
         button{
             margin-right: 20px;
         }
+        .about-me-btn{
+            @media screen and (min-width:767px){
+                animation : btn-left 1s ease forwards;
+            }
+        }
+        .download-cv-btn{
+            @media screen and (min-width:767px){
+                animation: btn-right 1s ease forwards;
+            }
+        }
+        @keyframes btn-left {
+            0%{
+                opacity: 0;
+                transform: translateX(-300px);
+            }
+            100%{
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        @keyframes btn-right {
+            0%{
+                opacity: 0;
+                transform: translateX(300px);
+            }
+            100%{
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
     }
 }
 .banner-img{
     display: flex;
     justify-content: center;
     width: 50%;
+    @media screen and (min-width:767px){
+        animation: righttoleft 1s ease forwards;
+    }
     img{
         width:60%;
         @media screen and (max-width:1200px) {
@@ -71,6 +149,16 @@
         }
         @media screen and (max-width:500px) {
             width:100%;
+        }
+    }
+    @keyframes righttoleft {
+        0%{
+            opacity: 0;
+            transform: translateX(300px);
+        }
+        100%{
+            opacity: 1;
+            transform: translateX(0);
         }
     }
 }

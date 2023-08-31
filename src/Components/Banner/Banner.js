@@ -2,6 +2,7 @@ import React from 'react';
 import './Banner.css';
 import cbanner from "../../images/picofme (2).png"
 import Button from '../Button/Button';
+import resume from "../../images/varun_resume.docx";
 
 export default function Banner() {
   return (
@@ -9,11 +10,11 @@ export default function Banner() {
       <div className="banner-content">
           <h1>Hi,I'm <span>Varun</span> </h1>
           <h1>From Bangalore ,India</h1>
-          <h3>I am a Front End Web Developer</h3>
-          <p>I have 1 year experinece in ForntEnd web Development.I love to develop web applications using technologies like React,Bootstrap and Tailwind CSS.</p>
-          <div class="btn-container">
-           <a href="#about-section"><Button name="About Me"></Button></a> 
-            <Button name="Download CV"></Button>
+          <h3>I am a <span className='front-end'>Front End Web Developer</span></h3>
+          <p className='banner-info'>I have 1 year experinece in ForntEnd web Development.I love to develop web applications using technologies like React,Bootstrap and Tailwind CSS.</p>
+          <div className="btn-container">
+           <a href="#about-section" className='about-me-btn'><Button name="About Me"></Button></a> 
+           <a href={resume} download className='download-cv-btn'><Button name="Download CV"></Button></a> 
           </div>
       </div>
       <div className='banner-img'>
