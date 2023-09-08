@@ -1,0 +1,105 @@
+.contact-page{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    min-height: 673px;
+    .contact-details{
+        flex-basis: 40%;
+        color:white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 350px;
+        @media screen and (max-width:767px) {
+            flex-basis: 100%;
+            height: 250px;
+            margin: 30px 0;
+        }
+        h1{
+            font-size: 60px;
+            @media screen and (max-width:767px) {
+                font-size: 30px;
+            }
+        }
+        .personal-details{
+            margin-top: 20px;
+            font-size: 20px;
+            @media screen and (max-width:300px) {
+                font-size: 14px;
+            }
+            .contact-content{
+                margin-bottom: 20px;
+            }
+            .bi{
+                color: #ff004f;
+                margin-right: 10px;
+            }
+        }
+        .social-media{
+            display: flex;
+            justify-content: space-between;
+            width:50%;
+            font-size: 28px;
+            @media screen and (max-width:767px) {
+                width:80%;
+            }
+            i{
+                cursor:pointer;
+                transition: 0.2s;
+            }
+            i:hover{
+                transform: translate(0,-10%);
+                color:#ff004f
+            }
+        }
+    }
+    .form-content{
+        flex-basis: 50%;
+        @media screen and (max-width:767px) {
+            margin: 0 auto;
+        }
+    }
+    .contact-form{ 
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding:20px 30px;
+        background-color: black;
+        min-height: 50vh;
+        width: 40vw;
+        background-color: rgb(40 39 39);
+        border-radius: 10px;
+        @media screen and (max-width:767px) {
+            width:80vw;
+        }
+        .input-field{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+            label{
+                color: #dad9d9;
+                margin-bottom: 5px;
+            }
+            input , textarea{
+                padding:6px;
+                border-radius: 5px;
+            }
+            input:focus , textarea:focus{
+                outline:1.5px solid #ff004f;
+                border: 1.5px solid #ff004f;
+            }
+            span,error-msg{
+                color:red;
+            }
+        }
+        Button{
+            width:100%;
+            background-color: #ff004f;
+            margin-top: 20px;
+        }
+        Button:hover{
+            background-color: #f75c8d;
+        }
+    }
+}

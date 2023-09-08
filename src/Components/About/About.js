@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './About.css';
+import './About.scss';
 import abtimg from "../../images/about-pic.jpg"
 
 export default function About() {

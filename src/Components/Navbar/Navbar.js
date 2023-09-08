@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Navbar.css';
+import './Navbar.scss';
 import logo from "../../images/varun-rename.svg";
 import {NavLink} from "react-router-dom";
 export default function Navbar() {
